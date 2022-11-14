@@ -1,5 +1,13 @@
 import { MongoClient } from "mongodb";
 
+import * as Sentry from "@sentry/node";
+import "@sentry/tracing";
+
+Sentry.init({
+  dsn: process.env.SENTRY_DSN_NODE,
+  tracesSampleRate: 1.0,
+});
+
 /**
  *
  * @param {import('@vercel/node').VercelRequest} req

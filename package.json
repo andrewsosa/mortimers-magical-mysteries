@@ -21,6 +21,7 @@
     "vite": "^3.2.3"
   },
   "dependencies": {
+    "@sentry/node": "^7.19.0",
     "@sentry/svelte": "^7.19.0",
     "@sentry/tracing": "^7.19.0",
     "@vercel/node": "^2.6.2",
