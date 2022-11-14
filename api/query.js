@@ -20,8 +20,6 @@ export default async function handler(req, res) {
 
   const { sliderValue, selectedRarities, selectedItemKinds } = req.body;
 
-  console.log(sliderValue, selectedRarities, selectedItemKinds);
-
   const cursor = collection.aggregate([
     {
       $match: {

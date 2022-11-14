@@ -47,7 +47,6 @@
         selectedRarities,
         selectedSettings,
       });
-      console.debug(data);
       results = data.results;
     } catch (err) {
       console.error(err);
